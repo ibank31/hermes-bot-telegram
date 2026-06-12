@@ -22,7 +22,7 @@ bot.on('text', async (ctx) => {
   }
 });
 
-const domain = 'ibank31-hermes-github-agent.hf.space';
+const domain = `${process.env.RENDER_EXTERNAL_HOSTNAME}`;
 
 bot.launch({
   webhook: {
